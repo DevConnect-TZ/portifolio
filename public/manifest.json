@@ -1,7 +1,7 @@
 {
-  "short_name": "DevConnect TZ",
-  "name": "DevConnect Tanzania - Empowering Tanzanian Developers",
-  "description": "Join the largest community of Tanzanian developers through bootcamps, meetups, workshops, mentorship, and more.",
+  "short_name": "DevTZ",
+  "name": "DevTZ - Software Solutions & Digital Services",
+  "description": "Premium software solutions and digital services for enterprises and individuals. Custom applications, web development, mobile apps, and automation.",
   "icons": [
     {
       "src": "DevConnect.png",

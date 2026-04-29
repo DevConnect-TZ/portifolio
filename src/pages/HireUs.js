@@ -54,17 +54,17 @@ const HireUs = () => {
   return (
     <>
       <SEO
-        title="Hire DevConnect Tanzania - Professional Development Services"
-        description="Hire DevConnect Tanzania for your software development projects. Our team of skilled Tanzanian developers can help bring your web applications, mobile apps, and digital solutions to life."
-        keywords="hire DevConnect Tanzania, Tanzanian developers for hire, software development services Tanzania, web development Tanzania, mobile app development, hire developers Tanzania"
+        title="Hire DevTZ - Professional Software Development Services"
+        description="Hire DevTZ for your software development projects. Our team of skilled developers can help bring your enterprise applications, web platforms, mobile apps, and automation solutions to life."
+        keywords="hire DevTZ, software development Tanzania, enterprise software, web development, mobile app development, custom software, automation solutions"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'Service',
           serviceType: 'Software Development Services',
           provider: {
             '@type': 'Organization',
-            name: 'DevConnect Tanzania',
-            url: 'https://devconnecttz.site',
+            name: 'DevTZ',
+            url: 'https://devtz.site',
           },
           areaServed: {
             '@type': 'Country',
@@ -72,7 +72,7 @@ const HireUs = () => {
           },
           offers: {
             '@type': 'Offer',
-            description: 'Professional software development services including web applications, mobile apps, and digital solutions.',
+            description: 'Professional software development services including enterprise software, web applications, mobile apps, and automation solutions.',
           },
         }}
       />
@@ -80,10 +80,10 @@ const HireUs = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Hire DevConnect Tanzania
+            Start Your Project
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's work together to bring your project to life. Fill out the form below and we'll get back to you soon.
+            Let's work together to bring your software vision to life. Fill out the form below and we'll get back to you soon.
           </p>
         </div>
 
@@ -158,7 +158,7 @@ const HireUs = () => {
                 value={formData.projectName}
                 onChange={(e) => setFormData({ ...formData, projectName: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
-                placeholder="e.g., E-commerce Website, Mobile App, etc."
+                placeholder="e.g., Enterprise CRM System, E-commerce Website, Mobile App, etc."
               />
             </div>
 
@@ -172,7 +172,7 @@ const HireUs = () => {
                 value={formData.sampleLink}
                 onChange={(e) => setFormData({ ...formData, sampleLink: e.target.value })}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors"
-                placeholder="https://example.com or link to similar site/service you need"
+                placeholder="https://example.com or link to similar service you need"
               />
               <p className="mt-1 text-sm text-gray-500">
                 Share a link to a similar website or service that you'd like us to reference
@@ -216,4 +216,3 @@ const HireUs = () => {
 };
 
 export default HireUs;
-

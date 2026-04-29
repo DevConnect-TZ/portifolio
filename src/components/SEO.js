@@ -1,12 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
-const BASE_URL = 'https://devconnecttz.site';
+const BASE_URL = 'https://devtz.site';
 
 const SEO = ({
-  title = 'DevConnect Tanzania - Empowering Tanzanian Developers',
-  description = 'DevConnect Tanzania is a community-driven platform empowering Tanzanian developers through bootcamps, meetups, workshops, mentorship, open source projects, and hackathons.',
-  keywords = 'DevConnect Tanzania, Tanzanian developers, developer community, tech Tanzania, coding bootcamp, developer meetup, software development, open source Tanzania, hackathons Tanzania, tech mentorship',
+  title = 'DevTZ - Software Solutions & Digital Services',
+  description = 'DevTZ provides premium software solutions and digital services for enterprises and individuals. We specialize in custom applications, web development, mobile apps, automation, and enterprise software solutions.',
+  keywords = 'DevTZ, software solutions Tanzania, enterprise software, custom applications, web development, mobile apps, automation, digital services, software company Tanzania, business automation',
   image = '/DevConnect.png',
   type = 'website',
   noindex = false,
@@ -19,20 +19,20 @@ const SEO = ({
   const defaultStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'DevConnect Tanzania',
+    name: 'DevTZ',
     url: BASE_URL,
     logo: `${BASE_URL}/DevConnect.png`,
-    description: 'Empowering Tanzanian developers through community, learning, and collaboration.',
+    description: 'Premium software solutions and digital services for enterprises and individuals.',
     sameAs: [
       // Add your social media URLs here when available
-      // 'https://twitter.com/devconnecttz',
-      // 'https://linkedin.com/company/devconnecttz',
-      // 'https://github.com/devconnecttz',
+      // 'https://twitter.com/devtz',
+      // 'https://linkedin.com/company/devtz',
+      // 'https://github.com/devtz',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
-      email: 'support@devconnecttz.site',
+      email: 'info@devtz.site',
     },
     areaServed: {
       '@type': 'Country',
@@ -60,7 +60,7 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={fullImageUrl} />
-      <meta property="og:site_name" content="DevConnect Tanzania" />
+      <meta property="og:site_name" content="DevTZ" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

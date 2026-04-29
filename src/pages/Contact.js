@@ -51,16 +51,16 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact DevConnect Tanzania - Get In Touch"
-        description="Get in touch with DevConnect Tanzania. Reach out via email, WhatsApp, or Instagram. We'd love to hear from you and answer any questions about our community."
-        keywords="contact DevConnect Tanzania, Tanzanian developer community contact, email DevConnect TZ, WhatsApp DevConnect, tech community Tanzania contact"
+        title="Contact DevTZ - Get In Touch"
+        description="Get in touch with DevTZ for software solutions and digital services. Reach out via email, WhatsApp, or social media. We'd love to discuss your project."
+        keywords="contact DevTZ, software solutions contact, enterprise software Tanzania, custom development contact, DevTZ support"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'ContactPage',
           mainEntity: {
             '@type': 'Organization',
-            name: 'DevConnect Tanzania',
-            email: 'devconnecttz@gmail.com',
+            name: 'DevTZ',
+            email: 'info@devtz.site',
             telephone: '+255746439242',
             address: {
               '@type': 'PostalAddress',
@@ -77,7 +77,7 @@ const Contact = () => {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions or want to get involved? We'd love to hear from you!
+            Have a project in mind or need software solutions? We'd love to hear from you!
           </p>
         </div>
 
@@ -156,7 +156,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-colors resize-none"
-                  placeholder="Tell us more about your inquiry..."
+                  placeholder="Tell us more about your project or inquiry..."
                 />
               </div>
 
@@ -226,10 +226,10 @@ const Contact = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
                   <a
-                    href="mailto:devconnecttz@gmail.com"
+                    href="mailto:info@devtz.site"
                     className="text-primary-600 hover:text-primary-700"
                   >
-                    devconnecttz@gmail.com
+                    info@devtz.site
                   </a>
                 </div>
               </div>
@@ -262,12 +262,12 @@ const Contact = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Instagram</h3>
                   <a
-                    href="https://instagram.com/devconnect.tz"
+                    href="https://instagram.com/devtz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary-600 hover:text-primary-700"
                   >
-                    @DevConnect TZ
+                    @DevTZ
                   </a>
                 </div>
               </div>
@@ -279,7 +279,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Follow Us</h2>
               <div className="space-y-4">
               <a
-                href="https://github.com/DevConnect-TZ"
+                href="https://github.com/DevTZ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
@@ -291,12 +291,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">GitHub</div>
-                  <div className="text-sm text-gray-600">@DevConnect-TZ</div>
+                  <div className="text-sm text-gray-600">@DevTZ</div>
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com/company/devconnect-tanzania"
+                href="https://linkedin.com/company/devtz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
@@ -308,7 +308,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">LinkedIn</div>
-                  <div className="text-sm text-gray-600">DevConnect Tanzania</div>
+                  <div className="text-sm text-gray-600">DevTZ</div>
                 </div>
               </a>
 
@@ -339,4 +339,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

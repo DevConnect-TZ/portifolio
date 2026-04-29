@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { addContactSubmission } from '../firebase/firestore';
 import { sendContactEmail } from '../services/emailService';
-import { CodeIcon, ToolsIcon, ComputerIcon, LightBulbIcon } from '../components/Icons';
+import { CodeIcon, ToolsIcon, ComputerIcon, LightBulbIcon, ServerIcon, DeviceMobileIcon, CogIcon, ShieldCheckIcon } from '../components/Icons';
 import SEO from '../components/SEO';
 
 const Services = () => {
@@ -17,7 +17,19 @@ const Services = () => {
 
   const services = [
     {
-      title: 'Web Design and Development',
+      title: 'Enterprise Software Solutions',
+      description: 'Comprehensive enterprise solutions including ERP systems, CRM platforms, and business management software. We build scalable systems that streamline operations and drive efficiency for large organizations.',
+      icon: ServerIcon,
+      features: [
+        'Custom ERP Development',
+        'CRM Solutions',
+        'Business Intelligence',
+        'Workflow Automation',
+        'Enterprise Integration',
+      ],
+    },
+    {
+      title: 'Web Design & Development',
       description: 'We create beautiful, responsive, and user-friendly websites tailored to your business needs. From simple landing pages to complex web applications, we bring your vision to life with modern design and cutting-edge technology.',
       icon: CodeIcon,
       features: [
@@ -29,7 +41,31 @@ const Services = () => {
       ],
     },
     {
-      title: 'Web and System Maintenance',
+      title: 'Mobile Application Development',
+      description: 'Native and cross-platform mobile applications for iOS and Android. We create intuitive, high-performance apps that engage users and deliver exceptional mobile experiences for your business.',
+      icon: DeviceMobileIcon,
+      features: [
+        'iOS Native Development',
+        'Android Native Development',
+        'Cross-platform Solutions',
+        'App Store Deployment',
+        'Ongoing App Maintenance',
+      ],
+    },
+    {
+      title: 'Automation & RPA',
+      description: 'Transform your business operations with intelligent automation solutions. We implement Robotic Process Automation (RPA) and custom automation workflows that reduce manual tasks and increase productivity.',
+      icon: CogIcon,
+      features: [
+        'Process Automation',
+        'RPA Implementation',
+        'Data Pipeline Automation',
+        'System Integration',
+        'Custom Workflow Solutions',
+      ],
+    },
+    {
+      title: 'System Maintenance & Support',
       description: 'Keep your website and systems running smoothly with our comprehensive maintenance services. We ensure optimal performance, security updates, and regular backups to protect your digital assets.',
       icon: ToolsIcon,
       features: [
@@ -53,15 +89,27 @@ const Services = () => {
       ],
     },
     {
-      title: 'Other Web Related Services',
-      description: 'We offer a wide range of additional web services to help your business succeed online. From SEO optimization to API development, we have the expertise to support all your digital needs.',
+      title: 'Security & Compliance',
+      description: 'Protect your digital assets with our comprehensive security solutions. We provide security audits, compliance consulting, and implementation of best practices to safeguard your business.',
+      icon: ShieldCheckIcon,
+      features: [
+        'Security Audits',
+        'Data Protection',
+        'Compliance Consulting',
+        'Penetration Testing',
+        'Security Implementation',
+      ],
+    },
+    {
+      title: 'Technical Consulting',
+      description: 'Strategic technology consulting to help you make informed decisions. From digital transformation strategies to technology stack selection, we guide you toward the right solutions for your business.',
       icon: LightBulbIcon,
       features: [
-        'SEO optimization',
-        'API development and integration',
-        'Database design and management',
-        'Cloud hosting and deployment',
-        'Technical consulting',
+        'Digital Transformation Strategy',
+        'Technology Stack Selection',
+        'Architecture Design',
+        'Performance Optimization',
+        'Technical Roadmap Planning',
       ],
     },
   ];
@@ -106,9 +154,9 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="Our Services - DevConnect Tanzania"
-        description="Professional web design and development, system maintenance, payment integrations, and other web-related services. Get in touch to discuss your project needs."
-        keywords="web design Tanzania, web development services, payment integration, system maintenance, web services Tanzania, DevConnect services"
+        title="Our Services - DevTZ"
+        description="Professional software solutions including enterprise systems, web development, mobile apps, automation, and digital services. Get in touch to discuss your project needs."
+        keywords="software solutions Tanzania, enterprise software, web development, mobile apps, automation, DevTZ services, custom software development"
       />
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,7 +165,8 @@ const Services = () => {
               Our Services
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer comprehensive web solutions to help your business thrive in the digital world.
+              We offer comprehensive software solutions to help your business thrive in the digital world. 
+              From enterprise systems to personal applications, we deliver excellence.
             </p>
           </div>
 
@@ -266,4 +315,3 @@ const Services = () => {
 };
 
 export default Services;
-

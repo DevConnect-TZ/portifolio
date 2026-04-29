@@ -52,9 +52,9 @@ const Activities = () => {
   return (
     <>
       <SEO
-        title="Our Activities - DevConnect Tanzania Events & Programs"
-        description="Explore DevConnect Tanzania's activities including bootcamps, meetups, coding workshops, mentorship programs, open-source projects, and hackathons. Join our events and grow your skills."
-        keywords="DevConnect Tanzania activities, developer bootcamps Tanzania, coding workshops, tech meetups Tanzania, hackathons Tanzania, mentorship programs"
+        title="Our Services & Solutions - DevTZ"
+        description="Explore DevTZ's comprehensive software solutions and services. From enterprise systems to mobile applications, discover how we deliver digital excellence for businesses and individuals."
+        keywords="DevTZ solutions, software services Tanzania, enterprise solutions, digital transformation, custom software development"
       />
       <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +63,7 @@ const Activities = () => {
             Our Activities
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore the various programs and events we organize to empower the developer community.
+            Discover our comprehensive range of software solutions and digital services.
           </p>
         </div>
 

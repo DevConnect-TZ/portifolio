@@ -4,4 +4,4 @@ Allow: /
 Disallow: /admin/
 
 # Sitemap
-Sitemap: https://devconnecttz.site/sitemap.xml
+Sitemap: https://devtz.site/sitemap.xml

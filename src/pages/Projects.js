@@ -34,9 +34,9 @@ const Projects = () => {
   return (
     <>
       <SEO
-        title="Featured Projects - DevConnect Tanzania"
-        description="Explore innovative projects built by DevConnect Tanzania community members. Discover open-source projects, web applications, and innovative solutions from Tanzanian developers."
-        keywords="DevConnect Tanzania projects, open source projects Tanzania, Tanzanian developer projects, community projects, software projects Tanzania"
+        title="Featured Projects - DevTZ"
+        description="Explore our portfolio of innovative software solutions. From enterprise systems to mobile applications, see how DevTZ transforms ideas into reality."
+        keywords="DevTZ projects, software solutions portfolio, enterprise projects Tanzania, web applications, mobile apps, automation projects"
       />
       <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ const Projects = () => {
             Featured Projects
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore the innovative projects built by our community members.
+            Explore our portfolio of successful software solutions and digital products.
           </p>
         </div>
 

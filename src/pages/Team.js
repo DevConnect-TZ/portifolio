@@ -49,9 +49,9 @@ const Team = () => {
   return (
     <>
       <SEO
-        title="Our Team - DevConnect Tanzania"
-        description="Meet the passionate individuals driving DevConnect Tanzania forward. Get to know our team members, their roles, and contributions to the Tanzanian developer community."
-        keywords="DevConnect Tanzania team, Tanzanian developers team, tech community leaders, developer community team Tanzania"
+        title="Our Team - DevTZ"
+        description="Meet the expert team behind DevTZ. Our skilled developers and consultants deliver premium software solutions for enterprises and individuals."
+        keywords="DevTZ team, software developers Tanzania, tech team, software consultants, enterprise software team"
       />
       <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ const Team = () => {
             Our Team
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet the passionate individuals driving DevConnect Tanzania forward.
+            Meet the expert team behind DevTZ. Skilled developers dedicated to delivering excellence.
           </p>
         </div>
 

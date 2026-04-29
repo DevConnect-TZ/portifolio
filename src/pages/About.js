@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getMissionVision } from '../firebase/firestore';
-import { TargetIcon, EyeIcon, HandshakeIcon, BookIcon, LightBulbIcon } from '../components/Icons';
+import { TargetIcon, EyeIcon, HandshakeIcon, CodeIcon, LightBulbIcon, RocketIcon } from '../components/Icons';
 import SEO from '../components/SEO';
 
 const About = () => {
@@ -38,18 +38,19 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About DevConnect Tanzania - Mission, Vision & Values"
-        description="Learn about DevConnect Tanzania's mission to empower developers through community, learning, and collaboration. Discover our vision for the future of tech in Tanzania and our core values."
-        keywords="DevConnect Tanzania about, mission, vision, values, developer community Tanzania, tech community values, Tanzanian tech organization"
+        title="About DevTZ - Software Solutions Company"
+        description="Learn about DevTZ's mission to deliver premium software solutions for enterprises and individuals. Discover our vision for digital transformation in Tanzania."
+        keywords="DevTZ about, software company Tanzania, enterprise software solutions, digital transformation, custom software development"
       />
       <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            About DevConnect Tanzania
+            About DevTZ
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are a community-driven organization dedicated to empowering developers across Tanzania.
+            We are a leading software solutions company dedicated to empowering businesses 
+            and individuals through innovative technology.
           </p>
         </div>
 
@@ -74,7 +75,7 @@ const About = () => {
                 <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-500 to-primary-300 rounded-full opacity-50"></div>
                 <p className="text-gray-700 text-lg leading-relaxed pl-4 relative z-10">
                   {missionVision.mission || 
-                    'Empowering Tanzanian developers through community, learning, and collaboration. We strive to create an inclusive environment where developers can grow, learn, and contribute to the tech ecosystem.'}
+                    'To deliver innovative, high-quality software solutions that empower businesses and individuals to achieve their goals. We are committed to excellence, reliability, and creating technology that makes a real difference.'}
                 </p>
               </div>
             </div>
@@ -100,7 +101,7 @@ const About = () => {
                 <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-500 to-primary-300 rounded-full opacity-50"></div>
                 <p className="text-gray-700 text-lg leading-relaxed pl-4 relative z-10">
                   {missionVision.vision || 
-                    'To become the leading tech community in Tanzania, fostering innovation and excellence in software development. We envision a future where Tanzanian developers are at the forefront of technological innovation.'}
+                    'To become Tanzania\'s most trusted technology partner, known for delivering transformative software solutions that drive business success and digital innovation across all industries.'}
                 </p>
               </div>
             </div>
@@ -108,44 +109,31 @@ const About = () => {
         </div>
 
         {/* Values Section */}
-        <div className="bg-white p-8 rounded-xl shadow-lg">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Our Values</h2>
+        <div className="bg-white p-8 rounded-xl shadow-lg mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: 'Community First',
-                description: 'We believe in the power of community and collaboration.',
-                Icon: HandshakeIcon,
-                animation: 'animate-pulse',
-              },
-              {
-                title: 'Continuous Learning',
-                description: 'We embrace lifelong learning and skill development.',
-                Icon: BookIcon,
-                animation: 'book-open',
+                title: 'Excellence',
+                description: 'We strive for excellence in every solution we deliver.',
+                Icon: RocketIcon,
               },
               {
                 title: 'Innovation',
-                description: 'We encourage creativity and innovative thinking.',
+                description: 'We embrace creativity and innovative thinking in problem solving.',
                 Icon: LightBulbIcon,
-                animation: 'animate-bounce',
+              },
+              {
+                title: 'Partnership',
+                description: 'We build lasting relationships with our clients.',
+                Icon: HandshakeIcon,
               },
             ].map((value, index) => {
               const IconComponent = value.Icon;
               return (
               <div key={index} className="text-center p-6 hover:transform hover:scale-105 transition-all duration-300">
                 <div className="mb-4 flex justify-center text-primary-600 relative">
-                  {value.animation === 'book-open' ? (
-                    <div className="relative w-16 h-16 flex items-center justify-center">
-                      <IconComponent className="w-12 h-12 animate-book-open" />
-                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <div className="w-5 h-7 bg-primary-400 opacity-30 rounded-sm transform -rotate-12 animate-book-page-left origin-left"></div>
-                        <div className="w-5 h-7 bg-primary-500 opacity-40 rounded-sm transform rotate-12 animate-book-page-right origin-right"></div>
-                      </div>
-                    </div>
-                  ) : (
-                    <IconComponent className={`w-12 h-12 ${value.animation}`} />
-                  )}
+                  <IconComponent className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">
                   {value.title}
@@ -156,6 +144,27 @@ const About = () => {
             })}
           </div>
         </div>
+
+        {/* What We Do */}
+        <div className="bg-gradient-to-br from-primary-600 to-primary-800 text-white p-8 rounded-xl shadow-lg">
+          <h2 className="text-3xl font-bold mb-6 text-center">What We Do</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: 'Enterprise Solutions', desc: 'Custom ERP, CRM, and business management systems' },
+              { title: 'Web Development', desc: 'Modern websites and web applications' },
+              { title: 'Mobile Apps', desc: 'iOS and Android applications' },
+              { title: 'Automation', desc: 'Process automation and RPA solutions' },
+              { title: 'Consulting', desc: 'Technology strategy and digital transformation' },
+              { title: 'Support', desc: '24/7 maintenance and technical support' },
+            ].map((item, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all">
+                <CodeIcon className="w-8 h-8 mb-3" />
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-primary-100">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
     </>
@@ -163,4 +172,3 @@ const About = () => {
 };
 
 export default About;
-

@@ -34,7 +34,7 @@ const Login = () => {
             Admin Login
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            DevConnect Tanzania Admin Panel
+            DevTZ Admin Panel
           </p>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>

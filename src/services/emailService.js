@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.REACT_APP_EMAIL_API_BASE || 'https://mail.devconnecttz.site/api';
+const API_BASE_URL = process.env.REACT_APP_EMAIL_API_BASE || 'https://mail.devtz.site/api';
 
 const postEmail = async (path, payload) => {
   try {

@@ -19,6 +19,11 @@ import {
   Whatsapp,
   Instagram,
   Bell,
+  Phone,
+  Server,
+  Globe,
+  ShieldCheck,
+  Gear,
 } from 'react-bootstrap-icons';
 
 // Specific icon components with consistent styling
@@ -100,4 +105,24 @@ export const InstagramIcon = ({ className = "w-6 h-6" }) => (
 
 export const BellIcon = ({ className = "w-6 h-6" }) => (
   <Bell className={className} />
+);
+
+export const DeviceMobileIcon = ({ className = "w-6 h-6" }) => (
+  <Phone className={className} />
+);
+
+export const ServerIcon = ({ className = "w-6 h-6" }) => (
+  <Server className={className} />
+);
+
+export const GlobeIcon = ({ className = "w-6 h-6" }) => (
+  <Globe className={className} />
+);
+
+export const ShieldCheckIcon = ({ className = "w-6 h-6" }) => (
+  <ShieldCheck className={className} />
+);
+
+export const CogIcon = ({ className = "w-6 h-6" }) => (
+  <Gear className={className} />
 );
