@@ -1,0 +1,7 @@
+portifolio reference/
+node_modules/
+vendor/
+.env
+.idea/
+.vscode/
+*.log
