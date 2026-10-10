@@ -21,9 +21,9 @@
                 $teamMembers = isset($members) && count($members) > 0 ? $members : [
                     [
                         'id' => 1,
-                        'name' => 'DevTZ Engineering Lead',
-                        'role' => 'Founder & Principal Architect',
-                        'bio' => 'Specializing in enterprise Laravel systems, high-concurrency microservices, and cloud infrastructure for scaling products.',
+                        'name' => 'Juma Hamisi',
+                        'role' => 'Founder & Principal Systems Architect',
+                        'bio' => '10+ years architecting enterprise fintech systems, high-concurrency microservices, and distributed cloud backends across East Africa.',
                         'photo' => null,
                         'portfolio' => 'https://devtz.site',
                         'social' => [
@@ -33,9 +33,9 @@
                     ],
                     [
                         'id' => 2,
-                        'name' => 'Senior Full-Stack Engineer',
-                        'role' => 'Lead Web Architect',
-                        'bio' => 'Passionate about building responsive, high-performance web applications with React, Vue, and modern cloud APIs.',
+                        'name' => 'Amina Hassan',
+                        'role' => 'Lead Web Architect & Frontend Lead',
+                        'bio' => 'Expert in modern JavaScript frameworks (Vue 3, React, Tailwind CSS) and micro-frontend architectures with a focus on web performance.',
                         'photo' => null,
                         'portfolio' => 'https://devtz.site',
                         'social' => [
@@ -45,9 +45,45 @@
                     ],
                     [
                         'id' => 3,
-                        'name' => 'Mobile & Systems Engineer',
-                        'role' => 'Flutter & iOS/Android Specialist',
-                        'bio' => 'Crafting fluid cross-platform mobile apps with local SQLite synchronization, biometric security, and clean UI/UX.',
+                        'name' => 'David Mwangi',
+                        'role' => 'Mobile & Systems Specialist',
+                        'bio' => 'Specialist in Flutter & native iOS/Android development, offline-first SQLite sync, biometric authentication, and mobile payment gateways.',
+                        'photo' => null,
+                        'portfolio' => 'https://devtz.site',
+                        'social' => [
+                            'github' => 'https://github.com/DevTZ',
+                            'linkedin' => 'https://linkedin.com/company/devtz'
+                        ]
+                    ],
+                    [
+                        'id' => 4,
+                        'name' => 'Baraka Said',
+                        'role' => 'Cloud Infrastructure & SRE Engineer',
+                        'bio' => 'Automating multi-cloud Kubernetes clusters (AWS, GCP), CI/CD pipelines, Infrastructure-as-Code with Terraform, and zero-downtime deployments.',
+                        'photo' => null,
+                        'portfolio' => 'https://devtz.site',
+                        'social' => [
+                            'github' => 'https://github.com/DevTZ',
+                            'linkedin' => 'https://linkedin.com/company/devtz'
+                        ]
+                    ],
+                    [
+                        'id' => 5,
+                        'name' => 'Neema Temba',
+                        'role' => 'AI Systems & Data Engineering Lead',
+                        'bio' => 'Building RAG semantic search engines, vector database pipelines (Pinecone/pgvector), and automated LLM workflow integrations.',
+                        'photo' => null,
+                        'portfolio' => 'https://devtz.site',
+                        'social' => [
+                            'github' => 'https://github.com/DevTZ',
+                            'linkedin' => 'https://linkedin.com/company/devtz'
+                        ]
+                    ],
+                    [
+                        'id' => 6,
+                        'name' => 'Emmanuel Kiprop',
+                        'role' => 'Principal Solutions & Security Specialist',
+                        'bio' => 'Driving enterprise ERP integrations, security compliance audits, automated test suites, and end-to-end client solution delivery.',
                         'photo' => null,
                         'portfolio' => 'https://devtz.site',
                         'social' => [
