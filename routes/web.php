@@ -19,6 +19,7 @@ Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])
 
 // Authentication Routes
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::get('/manage', [AuthController::class, 'showLogin'])->name('manage');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 

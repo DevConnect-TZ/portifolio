@@ -31,6 +31,18 @@ if (!function_exists('collect')) {
     }
 }
 
+if (!function_exists('session')) {
+    function session($key = null, $default = null) {
+        return null;
+    }
+}
+
+if (!function_exists('old')) {
+    function old($key = null, $default = null) {
+        return $default;
+    }
+}
+
 // Data definitions matching PortfolioController
 $services = [
     (object)[
@@ -357,18 +369,23 @@ if (!function_exists('route')) {
 
 // Master Render Process
 $layoutFile = __DIR__ . '/../resources/views/layouts/app.blade.php';
-$portfolioFile = __DIR__ . '/../resources/views/portfolio.blade.php';
+
+if (in_array($uri, ['/manage', '/login', '/admin'])) {
+    $targetFile = __DIR__ . '/../resources/views/auth/login.blade.php';
+} else {
+    $targetFile = __DIR__ . '/../resources/views/portfolio.blade.php';
+}
 
 $layoutRaw = file_get_contents($layoutFile);
-$portfolioRaw = file_get_contents($portfolioFile);
+$pageRaw = file_get_contents($targetFile);
 
-// Remove @extends and @section in portfolio template before merging
-$portfolioRaw = preg_replace('/@extends\s*\(\s*\'layouts\.app\'\s*\)/', '', $portfolioRaw);
-$portfolioRaw = preg_replace('/@section\s*\(\s*\'content\'\s*\)/', '', $portfolioRaw);
-$portfolioRaw = preg_replace('/@endsection\b/', '', $portfolioRaw);
+// Remove @extends and @section in child template before merging
+$pageRaw = preg_replace('/@extends\s*\(\s*\'layouts\.app\'\s*\)/', '', $pageRaw);
+$pageRaw = preg_replace('/@section\s*\(\s*\'content\'\s*\)/', '', $pageRaw);
+$pageRaw = preg_replace('/@endsection\b/', '', $pageRaw);
 
-// Merge raw portfolio template into raw layout @yield('content')
-$combinedRaw = str_replace("@yield('content')", $portfolioRaw, $layoutRaw);
+// Merge raw template into raw layout @yield('content')
+$combinedRaw = str_replace("@yield('content')", $pageRaw, $layoutRaw);
 
 // Render the combined raw template
 $data = compact('services', 'projects', 'members');
