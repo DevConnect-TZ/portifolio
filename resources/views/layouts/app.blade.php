@@ -177,26 +177,6 @@
                     this.terminalInput = '';
                 },
 
-                // Estimator State & Methods
-                estimator: {
-                    platform: 'custom-web',
-                    scale: 'enterprise',
-                    features: ['auth', 'database', 'api'],
-                    baseUSD: 3500,
-                    calculate() {
-                        let base = 2000;
-                        if (this.platform === 'custom-web') base = 2500;
-                        if (this.platform === 'mobile-app') base = 3000;
-                        if (this.platform === 'enterprise-erp') base = 5000;
-                        if (this.platform === 'automation-rpa') base = 2200;
-
-                        if (this.scale === 'growth') base *= 1.4;
-                        if (this.scale === 'enterprise') base *= 2.0;
-
-                        base += (this.features.length * 400);
-                        this.baseUSD = Math.round(base);
-                    }
-                },
                 currency: 'USD',
                 currencies: {
                     USD: { name: 'US Dollar', symbol: '$', rate: 1 },

@@ -22,8 +22,6 @@
     <!-- Engineering Team -->
     @include('components.team')
 
-    <!-- Interactive Cost Estimator Widget -->
-    @include('components.cost-estimator')
 
     <!-- Hire Us / Start Project Request -->
     @include('components.hire-us')

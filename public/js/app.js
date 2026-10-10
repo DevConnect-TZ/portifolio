@@ -51,39 +51,7 @@ function devtzApp() {
             return curr.symbol + ' ' + this.formatAmount(usdAmount);
         },
         
-        // Interactive Cost Estimator State
-        estimator: {
-            platform: 'web-app',
-            scale: 'growth',
-            timeline: 'standard',
-            features: ['auth', 'database', 'api', 'admin-panel'],
-            baseUSD: 6500,
-            budget: 6500,
-            calculate() {
-                let base = 2500;
-                if (this.platform === 'web-app') base = 4000;
-                if (this.platform === 'mobile') base = 5500;
-                if (this.platform === 'full-ecosystem') base = 9000;
-                if (this.platform === 'cloud-infra') base = 3500;
-
-                let scaleMult = 1.0;
-                if (this.scale === 'startup') scaleMult = 0.85;
-                if (this.scale === 'growth') scaleMult = 1.2;
-                if (this.scale === 'enterprise') scaleMult = 2.0;
-
-                let timelineMult = 1.0;
-                if (this.timeline === 'urgent') timelineMult = 1.35;
-                if (this.timeline === 'relaxed') timelineMult = 0.9;
-
-                let featureCost = this.features.length * 600;
-                this.budget = Math.round((base * scaleMult * timelineMult) + featureCost);
-                this.baseUSD = Math.round((base * scaleMult * timelineMult) + featureCost);
-                this.budget = this.baseUSD;
-            }
-        },
-
         init() {
-            this.estimator.calculate();
             this.$watch('darkMode', val => {
                 if (val) {
                     document.documentElement.classList.add('dark');
@@ -123,8 +91,7 @@ function devtzApp() {
             if (cmd === 'help') {
                 this.terminalHistory.push({
                     type: 'output',
-                    text: 'Available Commands:\n  • about     - Company overview & vision\n  • services  - Core engineering solutions\n  • projects  - Shipped enterprise case studies\n  • stack     - Core technology matrix\n  • quote     - Launch interactive cost estimator\n  • hire      - Open project inquiry channel\n  • theme     - Usage: theme [dark|light]\n  • clear     - Clear terminal buffer\n  • exit      - Close terminal'
-                    text: 'Available Commands:\n  • about     - Company overview & vision\n  • services  - Core engineering solutions\n  • projects  - Shipped enterprise case studies\n  • stack     - Core technology matrix\n  • quote     - Launch interactive cost estimator\n  • currency  - View or switch active currency (TZS, USD, EUR, GBP, KES)\n  • hire      - Open project inquiry channel\n  • theme     - Usage: theme [dark|light]\n  • clear     - Clear terminal buffer\n  • exit      - Close terminal'
+                    text: 'Available Commands:\n  • about     - Company overview & vision\n  • services  - Core engineering solutions\n  • projects  - Shipped enterprise case studies\n  • stack     - Core technology matrix\n  • quote     - Open project inquiry channel\n  • currency  - View or switch active currency (TZS, USD, EUR, GBP, KES)\n  • hire      - Open project inquiry channel\n  • theme     - Usage: theme [dark|light]\n  • clear     - Clear terminal buffer\n  • exit      - Close terminal'
                 });
             } else if (cmd === 'about') {
                 this.terminalHistory.push({
@@ -148,7 +115,7 @@ function devtzApp() {
                 });
             } else if (cmd === 'quote') {
                 this.terminalOpen = false;
-                document.getElementById('cost-estimator')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             } else if (cmd === 'currency' || cmd.startsWith('currency ')) {
                 const parts = cmd.split(/\s+/);
                 if (parts.length > 1) {
