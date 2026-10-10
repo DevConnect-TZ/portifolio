@@ -16,8 +16,7 @@
     <!-- Case Studies & Portfolio Projects -->
     @include('components.projects')
 
-    <!-- Developer Activities & Community Events -->
-    @include('components.activities')
+
 
     <!-- Engineering Team -->
     @include('components.team')

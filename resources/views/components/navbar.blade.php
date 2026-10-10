@@ -20,7 +20,7 @@
                 <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">Services</a>
                 <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">About Us</a>
                 <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">Projects</a>
-                <a href="#activities" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">Activities</a>
+
                 <a href="#team" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">Team</a>
                 <a href="#hire-us" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">Hire Us</a>
                 <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67] transition-colors duration-150">Contact</a>
@@ -81,7 +81,7 @@
             <a @click="mobileMenuOpen = false" href="#services" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">Services</a>
             <a @click="mobileMenuOpen = false" href="#about" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">About Us</a>
             <a @click="mobileMenuOpen = false" href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">Projects</a>
-            <a @click="mobileMenuOpen = false" href="#activities" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">Activities</a>
+
             <a @click="mobileMenuOpen = false" href="#team" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">Team</a>
             <a @click="mobileMenuOpen = false" href="#hire-us" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">Hire Us</a>
             <a @click="mobileMenuOpen = false" href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-[#1C2459] dark:hover:text-[#F5FF67]">Contact</a>

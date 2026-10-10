@@ -35,7 +35,7 @@
                     <li><a href="#services" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> Services</a></li>
                     <li><a href="#about" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> About Us</a></li>
                     <li><a href="#projects" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> Projects</a></li>
-                    <li><a href="#activities" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> Activities</a></li>
+
                     <li><a href="#team" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> Engineering Team</a></li>
                     <li><a href="#hire-us" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> Start a Project</a></li>
                     <li><a href="#contact" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#F5FF67]">▸</span> Contact Us</a></li>
